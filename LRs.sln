@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR01", "LR01\LR01.csproj", "{D9E59A00-9ADA-4016-970A-BEDB962E602A}"
 EndProject
@@ -98,6 +98,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task-07", "ExperienceOfArrays\task-07\task-07.csproj", "{CE614C09-B6A2-457E-94C9-DC7E891D2506}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task-08", "ExperienceOfArrays\task-08\task-08.csproj", "{82E13F89-F3D4-4EFA-948A-F561846BCC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR34-CalculatorUnitTest", "LR34-CalculatorUnitTest\LR34-CalculatorUnitTest.csproj", "{2FB1334C-38FC-4DBD-9248-62A6A0646408}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -297,6 +299,10 @@ Global
 		{82E13F89-F3D4-4EFA-948A-F561846BCC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82E13F89-F3D4-4EFA-948A-F561846BCC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82E13F89-F3D4-4EFA-948A-F561846BCC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB1334C-38FC-4DBD-9248-62A6A0646408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB1334C-38FC-4DBD-9248-62A6A0646408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB1334C-38FC-4DBD-9248-62A6A0646408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB1334C-38FC-4DBD-9248-62A6A0646408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
