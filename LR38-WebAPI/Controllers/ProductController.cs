@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace LR38_WebAPI.Controllers
 {
-    public class ValuesController : ApiController
+    public class ProductController : ApiController
     {
         // GET api/values
         public IEnumerable<string> Get()
