@@ -4,15 +4,23 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using LR38_WebAPI.Models;
 
 namespace LR38_WebAPI.Controllers
 {
     public class ProductController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        private readonly DataContext _context;
+
+        public ProductController()
         {
-            return new string[] { "value1", "value2" };
+            _context = new DataContext();
+        }
+        
+        // GET api/values
+        public IEnumerable<Product> Get()
+        {
+            return _context.Products.ToList();
         }
 
         // GET api/values/5
