@@ -4,7 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Mvc;
 using LR38_WebAPI.Models;
+using System.Data.Entity;
 
 namespace LR38_WebAPI.Controllers
 {
@@ -24,24 +26,61 @@ namespace LR38_WebAPI.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            return "value";
+            var model = _context.Products.FirstOrDefault(p => p.Id == id);
+
+            if (model == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(model);
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]Product model)
         {
+            if (model == null)
+            {
+                return BadRequest();
+            }
+
+            _context.Products.Add(model);
+            _context.SaveChanges();
+
+            return Ok();
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        public IHttpActionResult Put([FromBody]Product model)
         {
+            if (model == null)
+            {
+                return BadRequest();
+            }
+
+            _context.Products.Attach(model);
+            _context.Entry(model).State = EntityState.Modified;
+            _context.SaveChanges();
+
+            return Ok();
         }
 
         // DELETE api/values/5
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
+            var model = _context.Products.FirstOrDefault(p => p.Id == id);
+
+            if (model == null)
+            {
+                return BadRequest();
+            }
+
+            _context.Products.Remove(model);
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }
