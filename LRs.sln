@@ -111,6 +111,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR38-WebAPI", "LR38-WebAPI\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR39-WpfApp", "LR39-WpfApp\LR39-WpfApp.csproj", "{156AE408-89B0-4492-BA82-6FA93C673746}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR40-WCF-Service", "LR40-WCF-Service\LR40-WCF-Service.csproj", "{6675F0A0-8E61-440C-BB86-913B6045188B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR40-WCF-Client", "LR40-WCF-Client\LR40-WCF-Client.csproj", "{77A37C45-3F57-4B19-98F7-ABF8783EB369}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6675F0A0-8E61-440C-BB86-913B6045188B} = {6675F0A0-8E61-440C-BB86-913B6045188B}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +340,14 @@ Global
 		{156AE408-89B0-4492-BA82-6FA93C673746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{156AE408-89B0-4492-BA82-6FA93C673746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{156AE408-89B0-4492-BA82-6FA93C673746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6675F0A0-8E61-440C-BB86-913B6045188B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6675F0A0-8E61-440C-BB86-913B6045188B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6675F0A0-8E61-440C-BB86-913B6045188B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6675F0A0-8E61-440C-BB86-913B6045188B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A37C45-3F57-4B19-98F7-ABF8783EB369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A37C45-3F57-4B19-98F7-ABF8783EB369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A37C45-3F57-4B19-98F7-ABF8783EB369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A37C45-3F57-4B19-98F7-ABF8783EB369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
